@@ -1,0 +1,31 @@
+<svg width="100%" height="180" viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
+
+<rect width="800" height="180" rx="12" fill="#0D1117" stroke="#00FF66" stroke-width="1.5" stroke-dasharray="8 4"></rect>
+
+<defs>
+  <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#00FF66"></stop>
+    <stop offset="50%" stop-color="#00E5FF"></stop>
+    <stop offset="100%" stop-color="#0088FF"></stop>
+  </linearGradient>
+
+  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+    <path d="M20 0H0V20" fill="none" stroke="#161B22" stroke-width="1"></path>
+  </pattern>
+</defs>
+
+<rect width="800" height="180" rx="12" fill="url(#grid)" opacity="0.8"></rect>
+
+<path d="M50 40H750" stroke="url(#neon)" stroke-width="2" stroke-linecap="round"></path>
+
+<text x="400" y="95" text-anchor="middle" fill="url(#neon)" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="42" letter-spacing="4">
+JUAN ARROYO
+</text>
+
+<text x="400" y="130" text-anchor="middle" fill="#8B949E" font-family="monospace" font-size="16" letter-spacing="2">
+&lt; DEVELOPER /&gt;
+</text>
+
+<path d="M250 148H550" stroke="url(#neon)" stroke-width="1.5" stroke-linecap="round"></path>
+
+</svg>
