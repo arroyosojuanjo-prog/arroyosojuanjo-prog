@@ -1,45 +1,125 @@
-<p align="center">
-  <svg width="100%" height="180" viewBox="0 0 800 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect width="800" height="180" rx="12" fill="#0D1117" stroke="#00FF66" stroke-width="1.5" stroke-dasharray="8 4"/>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Arroyo - Developer</title>
 
-    <defs>
-      <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stop-color="#00FF66"/>
-        <stop offset="50%" stop-color="#00E5FF"/>
-        <stop offset="100%" stop-color="#0088FF"/>
-      </linearGradient>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#161B22" stroke-width="1"/>
-      </pattern>
-    </defs>
+    body {
+      background: #0d1117;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
 
-    <rect width="800" height="180" rx="12" fill="url(#grid)" opacity="0.8"/>
+    .banner {
+      width: 100%;
+      max-width: 800px;
+      height: 180px;
+      margin: 30px auto;
+      position: relative;
+      overflow: hidden;
+      border: 1.5px dashed #00ff66;
+      border-radius: 12px;
+      background:
+        linear-gradient(rgba(13,17,23,.9), rgba(13,17,23,.9)),
+        repeating-linear-gradient(
+          0deg,
+          transparent 0px,
+          transparent 19px,
+          #161b22 20px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          transparent 0px,
+          transparent 19px,
+          #161b22 20px
+        );
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-    <path d="M 50 40 L 750 40" stroke="url(#neonGrad)" stroke-width="2" stroke-linecap="round"/>
+    .top-line {
+      position: absolute;
+      top: 40px;
+      left: 6%;
+      width: 88%;
+      height: 2px;
+      background: linear-gradient(
+        90deg,
+        #00ff66,
+        #00e5ff,
+        #0088ff
+      );
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ff66;
+    }
 
-    <text x="400" y="95"
-      text-anchor="middle"
-      fill="url(#neonGrad)"
-      font-family="Segoe UI, Roboto, sans-serif"
-      font-weight="900"
-      font-size="42"
-      letter-spacing="4">
+    .name {
+      font-size: clamp(28px, 6vw, 42px);
+      font-weight: 900;
+      letter-spacing: 4px;
+      background: linear-gradient(
+        90deg,
+        #00ff66,
+        #00e5ff,
+        #0088ff
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 20px rgba(0,255,102,.25);
+      z-index: 2;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      color: #8b949e;
+      font-family: "Fira Code", monospace;
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+
+    .bottom-line {
+      position: absolute;
+      bottom: 30px;
+      width: 300px;
+      max-width: 50%;
+      height: 1.5px;
+      background: linear-gradient(
+        90deg,
+        #00ff66,
+        #00e5ff,
+        #0088ff
+      );
+      box-shadow: 0 0 8px #00e5ff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="banner">
+
+    <div class="top-line"></div>
+
+    <div class="name">
       JUAN ARROYO
-    </text>
+    </div>
 
-    <text x="400" y="130"
-      text-anchor="middle"
-      fill="#8B949E"
-      font-family="monospace"
-      font-size="16"
-      letter-spacing="2">
+    <div class="subtitle">
       &lt; DEVELOPER /&gt;
-    </text>
+    </div>
 
-    <path d="M 250 148 L 550 148"
-      stroke="url(#neonGrad)"
-      stroke-width="1.5"
-      stroke-linecap="round"/>
-  </svg>
-</p>
+    <div class="bottom-line"></div>
+
+  </div>
+
+</body>
+</html>
